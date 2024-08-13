@@ -13,4 +13,4 @@ This project is licensed under a **Custom License**.
 - **No Distribution:** Redistribution of this code is strictly prohibited.
 - **No Commercial Use:** This code may not be used for commercial purposes without express permission.
 
-For any inquiries about using this code, please contact [Your Contact Information].
+For any inquiries about using this code, please contact me on github.
