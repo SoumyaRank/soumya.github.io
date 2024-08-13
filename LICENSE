@@ -1,21 +1,18 @@
-MIT License
+Custom License Agreement
+Version 1.0
 
-Copyright (c) 2024 SoumyaRank
+1. Grant of License
+You are not granted any rights to use, copy, modify, or distribute the code, in whole or in part, unless you have obtained explicit written permission from the copyright holder.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+2. Restrictions
+No Use Without Permission: You may not use, copy, modify, merge, publish, distribute, sublicense, or sell copies of the code or any derivative works unless you have received express written permission from the copyright holder.
+No Distribution: You may not distribute or transmit the code or any part of it to any other person, either publicly or privately.
+No Commercial Use: You may not use the code for any commercial purpose without prior written consent from the copyright holder.
+3. Disclaimer
+The code is provided "as is," without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the author be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the code or the use or other dealings in the code.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+4. Termination
+Your rights under this license will automatically terminate if you fail to comply with any of these terms. Upon termination, you must destroy all copies of the code in your possession.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+5. Governing Law
+This License shall be governed by and construed in accordance with the laws of [Your Country/State], without regard to its conflict of law principles.
