@@ -1,0 +1,51 @@
+<mat-drawer-container class="full-page-container">
+    <mat-drawer #drawer class="navbar" mode="side" (mouseleave)="drawer.toggle()" closed>
+        <!-- <p>Navigation Links</p> -->
+        <button [routerLink]="['/Home']" routerLinkActive="router-link-active">About</button>
+        <button [routerLink]="['/Experience']" routerLinkActive="router-link-active">Experience</button>
+        <button [routerLink]="['/Projects']" routerLinkActive="router-link-active">Projects</button>
+        <button [routerLink]="['/Extracurricular']" routerLinkActive="router-link-active">Achievements</button>
+        <button [routerLink]="['/Skills']" routerLinkActive="router-link-active">Skills</button>
+    </mat-drawer>
+
+    <div class="content">
+        <button type="button" mat-button (mouseenter)="drawer.toggle()">
+            Menu/Quick Links
+        </button>
+
+        <div class="content-inner">
+            <img src="digital_nn2.png" alt="Description of image" class="image-style">
+            <div class="text-section">
+                <h1>Multiplier-Less In-Memory Computing Artificial Neural Network</h1>
+                <h2>Challenge</h2>
+                <p>There is a need for solutions reducing the hardware implementation cost to make relevant the
+                    integration of AIoT
+                    solutions on-chip possible.
+                    In a conventional Von-Neumann architecture, an important part of the area consumption is related to
+                    the size of the
+                    memory array for weight storage, and most of the power consumption is implied by the required data
+                    movements: data
+                    is fetched from the memory array and provided to the processing elements. The main drawback of such
+                    an architecture
+                    is the cost of the fetch operation, which is power and time consuming.
+                </p>
+                <h2>Solution</h2>
+                <p>
+                    To improve the hardware efficiency of the ANN implementation by using in-memory computing
+                    architecture.
+                    In a compute-in-memory architecture (CIM) each memory point has direct access to a processing
+                    element physically integrated within the memory array. CIM addresses the problem of weight movement
+                    with a static weight scheme. In a digital CIM architecture, the processing elements have direct
+                    access to the memory, allowing significant power reduction and faster operation due to the absence
+                    of fetch operation and weight movement. The disadvantage of the in-memory approach is the need to
+                    have a processing element for each weight, which greatly increases the silicon area cost.
+
+                </p>
+                <h2>My contribution</h2>
+                <p>
+                    SystemVerilog was used to implement the circuit resulting in doubling the TOPS/mm2, along with significant reductions in power consumption.                </p>
+            </div>
+
+        </div>
+    </div>
+</mat-drawer-container>

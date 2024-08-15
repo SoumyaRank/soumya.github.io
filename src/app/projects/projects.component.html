@@ -1,0 +1,104 @@
+<mat-drawer-container class="full-page-container">
+  <mat-drawer #drawer class="navbar" mode="side" (mouseleave)="drawer.toggle()" closed>
+    <!-- Navigation Links -->
+    <!-- <p>Navigation Links</p> -->
+    <button [routerLink]="['/Home']" routerLinkActive="router-link-active">About</button>
+    <button [routerLink]="['/Experience']" routerLinkActive="router-link-active">Experience</button>
+    <button [routerLink]="['/Projects']" routerLinkActive="router-link-active">Projects</button>
+    <button [routerLink]="['/Extracurricular']" routerLinkActive="router-link-active">Achievements</button>
+    <button [routerLink]="['/Skills']" routerLinkActive="router-link-active">Skills</button>
+  </mat-drawer>
+
+  <div class="content">
+    <button type="button" mat-button (mouseenter)="drawer.toggle()">
+      Menu/Quick Links
+    </button>
+
+    <h2 class="text-3xl text-center font-bold mb-6">Projects</h2>
+    <div class="grid grid-cols-3 gap-6 p-6">
+      <!-- <div
+        class="bg-transparent border border-purple-300 p-5 rounded-xl hover:bg-purple-200 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out animate-scale">
+        <h2 class="text-2xl font-semibold text-purple-800">mmWave RF front-end design</h2>
+        <h3 class="text-lg text-purple-700">RnD Project Offered by IIT Dharwad</h3>
+        <p class="text-gray-700"> – Optimized operating frequency to 34.6 GHz, addressing parasitic concerns.<br>
+          – Expertly tuned load for a 41 dB gain.<br> – Completed IF load layout with meticulous DRC and LVS checks,
+          currently
+          refining PEX for desired outcomes.
+        </p>
+      </div> -->
+
+      <div
+        class="bg-transparent border border-purple-300 p-5 rounded-xl hover:bg-purple-200 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out animate-scale relative overflow-hidden">
+        <h2 class="text-2xl font-semibold text-purple-700">mmWave RF front-end design</h2>
+        <h3 class="text-lg text-purple-700">RnD Project Offered by IIT Dharwad</h3>
+        <img src="layout_july.png" alt="digital" class="image-style">
+        <div class="text-overlay">
+
+          <p class="text-gray-700">
+            – Optimized operating frequency to 34.6 GHz, addressing parasitic concerns.<br>
+            – Expertly tuned load for a 41 dB gain.<br>
+            – Completed IF load layout with meticulous DRC and LVS checks, currently refining PEX for desired outcomes.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="bg-transparent border border-purple-300 p-5 rounded-xl hover:bg-purple-200 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out animate-scale relative overflow-hidden">
+        <h2 class="text-2xl font-semibold text-purple-700">Op-Amp Design using ngspice</h2>
+        <h3 class="text-lg text-purple-700">Runner up in Alokin (Electronic Design)</h3>
+        <img src="opamp.png" alt="digital" class="image-style">
+        <div class="text-overlay">
+          <!-- <h2 class="text-2xl font-semibold text-purple-700">Op-Amp Design using ngspice</h2>
+          <h3 class="text-lg text-purple-700">Runner up in Alokin (Electronic Design)</h3> -->
+          <p class="text-gray-700">
+            – Fully Differential Two-Stage CMOS Op-Amp with Miller Compensation exhibits DC gain
+            of 50 dB, 15 MHz unity gain bandwidth, and slew rate 20 V/µS for typical 2.5 pF differential capacitive
+            load.<br>
+            – Circuit achieves a phase margin greater than 75 degrees in TSMC 180m technology node.
+          </p>
+        </div>
+      </div>
+
+      <!-- <div
+        class="bg-transparent border border-purple-300 p-5 rounded-xl hover:bg-purple-200 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out animate-scale">
+        <img src="soi.jpg" alt="digital" class="image-style">
+        <h2 class="text-2xl font-semibold text-purple-700">Maze Solver Robot</h2>
+
+        <h3 class="text-lg text-purple-700">Winner in Summer of Innovation (Robotics Competition)</h3>
+
+        <p class="text-gray-700">
+          – Built a maze-solving robot by utilizing an infrared sensor for wall detection.<br>
+          – It also uses an ultrasound sensor for avoiding obstacles.<br></p>
+      </div> -->
+
+      <div
+        class="bg-transparent border border-purple-300 p-5 rounded-xl hover:bg-purple-200 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out animate-scale relative overflow-hidden">
+        <h2 class="text-2xl font-semibold text-purple-700">Maze Solver Robot</h2>
+        <h3 class="text-lg text-purple-700">Winner in SOI (Robotics Competition)</h3>
+
+        <img src="soi.jpg" alt="digital" class="image-style">
+        <div class="text-overlay">
+          <p class="text-gray-700">
+            – Built a maze-solving robot by utilizing an infrared sensor for wall detection.<br>
+            – It also uses an ultrasound sensor for avoiding obstacles.<br>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="bg-transparent border border-pink-300 p-5 rounded-xl hover:bg-pink-200 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out animate-scale relative overflow-hidden">
+        <h2 class="text-2xl font-semibold text-pink-700">LNA Design</h2>
+        <h3 class="text-lg text-pink-700">Mini Project</h3>
+        <img src="lna.png" alt="digital" class="image-style">
+        <div class="text-overlay">
+
+          <p class="text-gray-700">
+            – The circuit is intended to operate at 2.4 GHz with a gain of 19 dB and an S11 of -27dB.<br>
+            – UMC 65nm technology is used to emulate the common source cascode topology, biased using current mirror.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</mat-drawer-container>

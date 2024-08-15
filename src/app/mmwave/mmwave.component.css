@@ -1,0 +1,143 @@
+/* The main container will stretch to full height and width */
+.full-page-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background: transparent; /* Ensures the background is transparent */
+}
+
+/* The navbar takes up a portion of the page and stretches full height */
+.navbar {
+  width: 250px;
+  background: linear-gradient(300deg, #815cf0, #242486);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: white;
+  transition: width 0.3s ease; /* Smooth transition for collapsing */
+}
+
+/* Navbar button styles */
+.navbar button {
+  margin-top: 10px;
+  color: white;
+  background: transparent;
+  border: none;
+  text-align: left;
+  width: 100%;
+  padding: 10px;
+}
+
+.navbar button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+/* The content area fills the remaining space */
+.content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  position: relative; /* Allows absolute positioning of the button */
+  background: transparent; /* Makes the background of the content area transparent */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content horizontally */
+  justify-content: center; /* Center the content vertically */
+  transition: margin-left 0.3s ease; /* Smooth transition when navbar collapses */
+}
+
+/* Move the "Menu/Quick Links" button to the top left corner */
+.content {
+  flex-direction: column;
+  padding: 20px;
+  overflow-y: auto;
+  position: relative; /* Allows absolute positioning of the button and image */
+  background: transparent; /* Makes the background of the content area transparent */
+}
+
+/* Move the "Menu/Quick Links" button to the top left corner */
+/* Style for the "Menu/Quick Links" button */
+.content button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10; /* Ensure it stays on top of other elements */
+  font-size: 1.2rem; /* Increase font size for prominence */
+  padding: 12px 20px; /* Adjust padding for better touch area */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-opaque background */
+  color: white;
+  border: none;
+  border-radius: 8px; /* Rounded corners for a modern look */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect for the "Menu/Quick Links" button */
+.content button:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow on hover */
+}
+
+/* Container for the image and text */
+.content-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  width: 100%;
+}
+
+/* Style for the image */
+.image-style {
+  max-width: 50%; 
+  height: 50%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Space between the image and text */
+}
+
+/* Style for the text section */
+.text-section {
+  max-width: 100%; /* Make text section responsive */
+  margin: 0 auto; /* Center text block horizontally */
+  padding: 0 10px; /* Add padding for better readability on smaller screens */
+  box-sizing: border-box; /* Ensure padding is included in width */
+  font-weight: 200;
+  /* color: #ffffff; */
+  /* font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+}
+
+/* Align headings to the extreme left */
+.text-section h2,
+.text-section h3 {
+  text-align: left; /* Align headings to the left */
+  width: 100%;
+  margin-left: 0; /* Ensure headings are to the extreme left */
+}
+
+/* Increase font size of headings */
+.text-section h1 {
+  font-size: 1.75rem; /* Increase main heading size */
+  font-weight: bold;
+  margin-top: 20px; /* Add margin above the heading */
+}
+.text-section h2 {
+  font-size: 1.5rem; /* Increase main heading size */
+  font-weight: bold;
+  margin-top: 20px; /* Add margin above the heading */
+}
+
+.text-section h3 {
+  font-size: 1.3rem; /* Increase subheading size */
+}
+
+/* Adjust content layout when the navbar collapses */
+.full-page-container .mat-drawer.mat-drawer-close ~ .content {
+  margin-left: 0; /* Remove margin when navbar is collapsed */
+}
+
+/* Adjust text section width when navbar collapses */
+.full-page-container .mat-drawer.mat-drawer-close .content-inner {
+  width: calc(100% - 20px); /* Adjust width of text block to use available space */
+}

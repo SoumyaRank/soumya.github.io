@@ -1,0 +1,128 @@
+<mat-drawer-container class="full-page-container">
+  <mat-drawer #drawer class="navbar" mode="side" (mouseleave)="drawer.toggle()" closed>
+    <!-- Navigation Links -->
+    <!-- <p>Navigation Links</p> -->
+    <button [routerLink]="['/Home']" routerLinkActive="router-link-active">About</button>
+    <button [routerLink]="['/Experience']" routerLinkActive="router-link-active">Experience</button>
+    <button [routerLink]="['/Projects']" routerLinkActive="router-link-active">Projects</button>
+    <button [routerLink]="['/Extracurricular']" routerLinkActive="router-link-active">Achievements</button>
+    <button [routerLink]="['/Skills']" routerLinkActive="router-link-active">Skills</button>
+  </mat-drawer>
+
+  <div class="content">
+    <button type="button" mat-button (mouseenter)="drawer.toggle()" (click)="drawer.toggle()">
+      Menu/Quick Links
+    </button>
+
+    <div class="content-inner">
+      <div class="text-section">
+        <h2>Soumya Rank</h2>
+        <!-- <br> -->
+        <h3>Hey Folks!</h3>
+        <p>
+          I am a fourth-year student at <b>IIT Dharwad</b>, pursuing a B.Tech. in <b>Electrical Engineering</b>, with an
+          internship background in <b>RF front end design</b> and in
+          digital design. I've worked abroad professionally as a recipient of the esteemed <b>Charpak Lab
+            Scholarship</b>.
+          I am actively looking for a <b>PhD program in analog domain</b> that will begin in the fall of 2025.
+        </p>
+        <!-- <br> -->
+        <h3>Areas of Expertise</h3>
+        <p>
+          My interests are <b>analog circuit design</b>, <b>RF-IC design</b>, and the application of EDA tools.I have
+          solid design
+          experience with LNA, Op-Amp, LDO, and current mirrors. I am quite knowledgeable in impedance matching
+          networks, mixers, and oscillators. Furthermore, I completed the IF load <b>layout</b> all by myself, including
+          <b>DRC</b>, <b>LVS</b> and <b>PEX</b>. Along with these
+          analog subjects, I enjoyed working in the field of <b>neural networks</b> and the use of fully digital
+          circuits for
+          their hardware implementation.
+        </p>
+        <!-- will add major skills in logos or smth catchy - only important keywords -->
+      </div>
+      <div>
+        <img src="flow_white2_rmbg.png" alt="Description of image" class="image-style">
+      </div>
+    </div>
+    <!-- <h2 class="text-3xl font-bold mb-6">Sections</h2> -->
+    <!-- <div class="text-heading">
+      <h1>Contact </h1>
+    </div> -->
+    <div class="grid grid-cols-3 gap-6 p-6">
+      <div (click)="redirect_Experience()"
+        class="bg-transparent hover:underline border border-purple-300 p-5 rounded-xl hover:bg-purple-200 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out animate-scale">
+        <h2 class="text-lg font-semibold text-purple-700">Experience</h2>
+        <p class="text-gray-700">Having research experience in both the analog and digital realms sets me apart from
+          others.</p>
+      </div>
+
+      <div (click)="redirect_Projects()"
+        class="bg-transparent hover:underline border border-pink-300 p-5 rounded-xl hover:bg-pink-200 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out animate-scale">
+        <h2 class="text-lg font-semibold text-pink-700">Projects</h2>
+        <p class="text-gray-700">Application expertise of signals spanning a few microvolts to tens of volts.</p>
+      </div>
+
+      <div (click)="redirect_extracurricular()"
+        class="bg-transparent hover:underline border border-purple-300 p-5 rounded-xl hover:bg-purple-200 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out animate-scale">
+        <h2 class="text-lg font-semibold text-purple-700">Extracurricular</h2>
+        <p class="text-gray-700">Engaging in activities like pitching startup ideas, analyzing case studies, playing
+          chess and football, and creating visually captivating paintings.</p>
+      </div>
+
+      <div (click)="redirect_skills()"
+        class="bg-transparent hover:underline border border-purple-300 p-5 rounded-xl hover:bg-purple-200 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out animate-scale">
+        <h2 class="text-lg font-semibold text-purple-700">Skills</h2>
+        <p class="text-gray-700">A versatile professional with exceptional technical expertise and strong interpersonal
+          skills.</p>
+      </div>
+
+      <!-- <h2 class="text-lg font-semibold text-purple-700" style="font-size: 2rem;">Experience</h2> -->
+      
+      <div 
+        class="bg-transparent hover:underline border border-purple-300 p-5 rounded-xl hover:bg-purple-200 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out animate-scale">
+      <!-- <div class="grid grid-rows-3 gap-6 p-1"> -->
+        <h2 class="text-lg font-semibold text-purple-700">Contact</h2>
+        <a href="mailto:soumyarank@gmail.com" target="_blank">
+          <!-- <div
+            class="bg-transparent hover:underline border border-purple-300 p-5 rounded-xl hover:bg-purple-200 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out animate-scale"> -->
+            <h2 class="text-lg text-purple-700">Email</h2>
+            <!-- <p class="text-gray-700">
+              soumyarank&#64;gmail.com
+            </p> -->
+          <!-- </div> -->
+        </a>
+        <!-- <br> -->
+        <a href="https://www.linkedin.com/in/soumyarank/" target="_blank">
+          <!-- <div
+            class="bg-transparent hover:underline border border-pink-300 p-5 rounded-xl hover:bg-pink-200 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out animate-scale"> -->
+            <h2 class="text-lg text-pink-700">LinkedIn</h2>
+            <!-- <p class="text-gray-700">
+              https://www.linkedin.com/in/soumyarank/
+            </p> -->
+          <!-- </div> -->
+        </a>
+  
+  
+        <a href="https://github.com/SoumyaRank" target="_blank">
+          <!-- <div
+            class="bg-transparent hover:underline border border-purple-300 p-5 rounded-xl hover:bg-purple-200 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out animate-scale"> -->
+            <h2 class="text-lg text-purple-700">GitHub</h2>
+            <!-- <p class="text-gray-700">
+              https://github.com/SoumyaRank
+            </p> -->
+          <!-- </div> -->
+        </a>
+      </div>
+  
+        <!-- <h2 class="text-lg font-semibold text-purple-700" style="font-size: 2rem;">Experience</h2> -->
+  
+      <!-- </div> -->
+    </div>
+    <!-- <div class="text-section"> -->
+
+
+    
+
+    <!-- </div> -->
+  </div>
+</mat-drawer-container>
