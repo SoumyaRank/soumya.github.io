@@ -1,0 +1,171 @@
+/* The main container will stretch to full height and width */
+.full-page-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background: transparent; /* Ensures the background is transparent */
+  }
+  
+  /* The navbar takes up a portion of the page and stretches full height */
+  .navbar {
+    width: 250px;
+    background: linear-gradient(300deg, #815cf0, #242486);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: white;
+  }
+  
+  /* Navbar button styles */
+  .navbar button {
+    margin-top: 10px;
+    color: white;
+    background: transparent;
+    border: none;
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .navbar button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+  }
+  
+  /* Style for the experience dropdown menu */
+  .experience-dropdown {
+    display: none; /* Hide dropdown by default */
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  
+  .navbar button:hover + .experience-dropdown {
+    display: flex; /* Show dropdown when hovering over Experience */
+  }
+  
+  .experience-dropdown button {
+    background: transparent;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .experience-dropdown button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+  }
+  
+  /* The content area fills the remaining space */
+  .content {
+    flex-direction: column;
+    padding: 20px;
+    overflow-y: auto;
+    position: relative; /* Allows absolute positioning of the button and image */
+    background: transparent; /* Makes the background of the content area transparent */
+    align-items: center; /* Center-aligns the content horizontally */
+  }
+  
+  /* Style for the "Menu/Quick Links" button */
+  .content button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10; /* Ensure it stays on top of other elements */
+    font-size: 1.2rem; /* Increase font size for prominence */
+    padding: 12px 20px; /* Adjust padding for better touch area */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-opaque background */
+    color: white;
+    border: none;
+    border-radius: 8px; /* Rounded corners for a modern look */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  }
+  
+  /* Hover effect for the "Menu/Quick Links" button */
+  .content button:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow on hover */
+  }
+  
+  
+  /* Container for the text and image */
+  .content-inner {
+    display: flex;
+    flex-direction: row; /* Arrange items in a row */
+    align-items: flex-start; /* Align items at the start of the container */
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 60px; /* Adjust to avoid overlap with the button */
+  }
+  
+  /* Style for the text section */
+  .text-section {
+    text-align: center; /* Center-aligns the text inside the section */
+    max-width: 800px; /* Optional: Limit the width of the text section */
+    margin: 0 auto; /* Center the text section itself */
+  }
+  
+  .text-section h2 {
+    font-size: 2.5rem; /* Adjust the size to your preference */
+    font-weight: bold; /* Optional: Make the text bold */
+    margin-bottom: 10px; /* Optional: Add some space below the heading */
+  }
+  
+  /* Style for the image */
+  .relative {
+    position: relative; /* Ensure the parent is positioned relative for absolute positioning */
+  }
+  
+  .text-overlay {
+    position: absolute;
+    bottom: 0; /* Position the text at the bottom of the container */
+    left: 0; /* Align text to the left of the container */
+    width: 100%; /* Make the text box match the width of the image */
+    padding: 10px; /* Optional: Add some padding around the text */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    background: rgba(255, 255, 255, 0.6); /* Optional: Add a semi-transparent background to make the text more readable */
+    color: inherit; /* Use the inherited color from the HTML */
+  
+    opacity: 0; /* Hide text by default */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition for showing/hiding text */
+    z-index: 10; /* Ensure it stays on top of other elements */
+    font-weight: bolder;
+  }
+  
+  .relative:hover .text-overlay {
+    opacity: 1; /* Show text on hover */
+  }
+  
+  .image-style {
+    width: 100%; /* Ensure the image takes up the full width of its container */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  /* Custom animations */
+  @keyframes scaleIn {
+    from {
+      transform: scale(0.95);
+      opacity: 0.9;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .animate-scale {
+    animation: scaleIn 0.3s ease-in-out;
+  }
+  
+  /* Optional: If you want to add transparency to the cards */
+  /* Light transparent background for cards */
+  .grid div {
+    background: rgba(255, 255, 255, 0.8); 
+  }
+  
+  

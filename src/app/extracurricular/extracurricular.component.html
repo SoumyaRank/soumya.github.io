@@ -1,0 +1,164 @@
+<mat-drawer-container class="full-page-container">
+  <mat-drawer #drawer class="navbar" mode="side" (mouseleave)="drawer.toggle()" closed>
+    <!-- <p>Navigation Links</p> -->
+    <button [routerLink]="['/Home']" routerLinkActive="router-link-active">About</button>
+    <button [routerLink]="['/Experience']" routerLinkActive="router-link-active">Experience</button>
+    <button [routerLink]="['/Projects']" routerLinkActive="router-link-active">Projects</button>
+    <button [routerLink]="['/Extracurricular']" routerLinkActive="router-link-active">Achievements</button>
+    <button [routerLink]="['/Skills']" routerLinkActive="router-link-active">Skills</button>
+  </mat-drawer>
+
+  <div class="content">
+    <button type="button" mat-button (mouseenter)="drawer.toggle()">
+      Menu/Quick Links
+    </button>
+
+    <div class="flex flex-col items-center justify-center min-h-screen bg-transparent">
+      <h1 class="text-3xl font-bold mb-6">Achievements</h1>
+      <div class="grid grid-cols-3 gap-6 p-6">
+        <div
+          class="bg-transparent border border-purple-300 p-5 rounded-xl hover:bg-purple-200 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out animate-scale">
+          <h2 class="text-lg font-semibold text-purple-700">Academic</h2>
+          <div
+            class="bg-transparent border border-pink-300 p-5 rounded-xl hover:bg-pink-200 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out animate-scale">
+            <p class="text-gray-700">
+              <span class="date">May 2024 - June 2024</span> Awarded with the prestigious Charpak Lab Scholarship <br>
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="bg-transparent border border-pink-300 p-5 rounded-xl hover:bg-pink-200 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out animate-scale">
+          <h2 class="text-lg font-semibold text-pink-700">Technical</h2>
+
+          <div
+            class="text_image bg-transparent border border-pink-300 p-5 rounded-xl hover:bg-pink-200 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out animate-scale">
+            <div>
+              <p class="text-gray-700">
+                <span class="date">July 2023</span>
+                Attended a week long summer school at <b>IISc Bangalore</b> <br>
+              </p>
+            </div>
+            <!-- <img src="iisc_logo.png" alt="Description of image" class="image-style"> -->
+          </div>
+
+          <a href="https://x.com/iitdhrwd/status/1691036666453241857/photo/1" target="_blank">
+            <div
+              class="text_image bg-transparent border border-pink-300 p-5 rounded-xl hover:bg-pink-200 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out animate-scale">
+              <div>
+                <!-- Text above the image -->
+                <p class="text-gray-700">
+                  <span class="date">Feb 2023</span> <b>Silver Medal</b>, gradCapital, a startup pitch event, Inter IIT Tech
+                  Meet 11.0, <b>IIT Kanpur</b><br>
+
+                  – Our idea addresses the exponential data growth and limited computing power challenges.<br>
+                  – For cryptography, we offer a hybrid quantum encryption system with post-quantum algorithms,
+                  enhancing
+                  security.<br>
+                  – In computer vision, our (Convolutional Neural Network) CNN-based model integrates conventional and
+                  quantum machine learning, overcoming encryption vulnerabilities posed by faster quantum computers.
+                </p>
+              </div>
+
+              <!-- Image with link -->
+              <!-- <a href="https://x.com/iitdhrwd/status/1691036666453241857/photo/1" target="_blank">
+              <img src="silvertech.jpeg" alt="Description of image" class="image-style">
+            </a> -->
+              <img src="silvertech.jpeg" alt="Description of image" class="image-style">
+              <!-- Text below the image -->
+            </div>
+          </a>
+
+
+          <div
+            class="text_image bg-transparent border border-pink-300 p-5 rounded-xl hover:bg-pink-200 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out animate-scale">
+            <div>
+              <p class="text-gray-700">
+                <span class="date">Aug 2022</span>
+                1st position Robotics Competition, Summer of Innovation 3rd Edition <br>
+                – Built a maze-solving robot by utilizing an infrared sensor for wall detection.<br>
+                – It also uses an ultrasound sensor for avoiding obstacles.<br>
+              </p>
+            </div>
+            <!-- <div> -->
+            <img src="soi.jpg" alt="Description of image" class="image-style">
+            <!-- </div> -->
+          </div>
+
+          <div
+            class="bg-transparent border border-pink-300 p-5 rounded-xl hover:bg-pink-200 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out animate-scale">
+            <p class="text-gray-700">
+              <span class="date">July 2022</span> 1st position Situation Analysis, REU Annual Fest<br>
+            </p>
+          </div>
+
+          <div
+            class="bg-transparent border border-pink-300 p-5 rounded-xl hover:bg-pink-200 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out animate-scale">
+            <p class="text-gray-700">
+              <span class="date">Jan 2022</span> 3rd position Case Study Competition, Avadhan 2022<br>
+            </p>
+          </div>
+
+        </div>
+
+        <div
+          class="bg-transparent border border-purple-300 p-5 rounded-xl hover:bg-purple-200 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out animate-scale">
+          <h2 class="text-lg font-semibold text-purple-700">Non Technical</h2>
+          <div
+            class="bg-transparent border border-pink-300 p-5 rounded-xl hover:bg-pink-200 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out animate-scale">
+            <p class="text-gray-700">
+              <span class="date">Aug 2023 – Present</span> Department Representative, Electrical Engineering Department,
+              IIT Dharwad<br>
+            </p>
+          </div>
+          <div
+            class="text_image bg-transparent border border-pink-300 p-5 rounded-xl hover:bg-pink-200 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out animate-scale">
+            <p class="text-gray-700">
+              <span class="date">Apr 2023 – Apr 2024</span> Fine Arts Club Secretary, Cultural Committee, IIT
+              Dharwad<br>
+            </p>
+            <img src="aesthetica_official_logo.png" alt="Description of image" class="image-style">
+          </div>
+          <div
+            class="bg-transparent border border-pink-300 p-5 rounded-xl hover:bg-pink-200 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out animate-scale">
+            <p class="text-gray-700">
+              <span class="date">Feb 2023 – Mar 2023</span> Event Lead & Design Team Member, PARSEC 2023, IIT
+              Dharwad<br>
+            </p>
+          </div>
+          <div
+            class="bg-transparent border border-pink-300 p-5 rounded-xl hover:bg-pink-200 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out animate-scale">
+            <p class="text-gray-700">
+              <span class="date">Oct 2022 – Present</span> Department Academic Mentor, Student Mentorship Program, IIT
+              Dharwad<br>
+            </p>
+          </div>
+          <div
+            class="text_image bg-transparent border border-pink-300 p-5 rounded-xl hover:bg-pink-200 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out animate-scale">
+            <p class="text-gray-700">
+              <span class="date">Dec 2023</span> Represented IIT Dharwad for Chess at 56th Inter IIT Sports Meet,<b> IIT Gandhinagar</b><br>
+            </p>
+            <img src="chess.jpg" alt="Description of image" class="image-style">
+          </div>
+          <div
+            class="text_image bg-transparent border border-pink-300 p-5 rounded-xl hover:bg-pink-200 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out animate-scale">
+            <p class="text-gray-700">
+              <span class="date">Dec 2023</span> Represented IIT Dharwad for Canvas Painting at Inter IIT Cultural Meet
+              6.0,<b> IIT Kharagpur</b> <br>
+              <span class="date">Jan 2023</span> Represented IIT Dharwad for Canvas Painting at Inter IIT Cultural Meet
+              5.0,<b> IIT Madras</b> <br>
+            </p>
+            <img src="painting.jpg" alt="Description of image" class="image-style">
+          </div>
+          <div
+            class="bg-transparent border border-pink-300 p-5 rounded-xl hover:bg-pink-200 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out animate-scale">
+            <p class="text-gray-700">
+              <span class="date">Feb 2023</span> <b>Silver</b> in Football, Inter Hostel General Championship <br>
+              <span class="date">Feb 2022</span> <b>Gold</b> in Football, Inter Hostel General Championship <br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</mat-drawer-container>

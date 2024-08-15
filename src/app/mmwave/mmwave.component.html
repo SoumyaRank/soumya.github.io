@@ -1,0 +1,41 @@
+<mat-drawer-container class="full-page-container">
+    <mat-drawer #drawer class="navbar" mode="side" (mouseleave)="drawer.toggle()" closed>
+        <!-- <p>Navigation Links</p> -->
+        <button [routerLink]="['/Home']" routerLinkActive="router-link-active">About</button>
+        <button [routerLink]="['/Experience']" routerLinkActive="router-link-active">Experience</button>
+        <button [routerLink]="['/Projects']" routerLinkActive="router-link-active">Projects</button>
+        <button [routerLink]="['/Extracurricular']" routerLinkActive="router-link-active">Achievements</button>
+        <button [routerLink]="['/Skills']" routerLinkActive="router-link-active">Skills</button>
+    </mat-drawer>
+
+    <div class="content">
+        <button type="button" mat-button (mouseenter)="drawer.toggle()">
+            Menu/Quick Links
+        </button>
+
+        <div class="content-inner">
+            <img src="rf_frontend_white2.png" alt="Description of image" class="image-style">
+            <div class="text-section">
+                <h1>Design of Performance Power tunable mmWave Frontend IP</h1>
+                <h2>Challenge</h2>
+                <p>The world is moving towards a highly networked society which is predicted to drive an exponential growth in traffic between interconnected devices. Wireless communications will need to support a 1000x increase in capacity/km2, a 10-100x faster data-rate and 100x more connected devices. For the wireless domain, the spectrum availability is poor below 10 GHz, and poses interference problems. However, millimetre-wave (mm-Wave) frequencies (above 24 GHz) can have bandwidths of several GHz and allow on-chip methods for interference reduction.
+                </p>
+                <h2>Solution</h2>
+                <p>
+                    We propose a folded-cascode topology with several new features, which enable operation at mm-Wave frequencies. To our knowledge, this is the first implementation of the LMV architecture in the mm-Wave frequency range. 
+                </p>
+                <h2>My contribution</h2>
+                <h3>Results</h3>
+                <p>
+                    Designing the Intermediate Frequency (IF) load, serving as both a low-pass filter and facilitating signal amplification.
+                    Obtained a significant gain of 44 dB for 50.5 GHz input in UMC 40nm technology. Initiated the layout design of a cross-coupled operational amplifier, integral to the IF load.
+                </p>
+                <h3>Concept</h3>
+                <p>
+                    In the process of demodulation, the task at hand is to amplify a signal in the µV range to mV and subsequently apply low-pass filtering. This necessitates the use of an op-amp with substantial bandwidth and gain capabilities. However, it’s important to acknowledge the inherent trade-off between bandwidth and gain. To address this trade-off, we introduce a gain-boosting stage into the system. The primary objective of this gain-boosting stage is to maximize the output impedance, thereby achieving a significantly higher voltage gain. The fundamental concept underlying gain boosting is to further elevate the output impedance without resorting to the inclusion of additional cascode devices. This approach ensures that we strike a delicate balance between bandwidth and gain, allowing us to effectively process and amplify the incoming signal for demodulation. 
+                </p>
+            </div>
+
+        </div>
+    </div>
+</mat-drawer-container>

@@ -1,0 +1,39 @@
+<mat-drawer-container class="full-page-container">
+  <mat-drawer #drawer class="navbar" mode="side" (mouseleave)="drawer.toggle()" closed>
+    <!-- Navigation Links -->
+    <!-- <p>Navigation Links</p> -->
+    <button [routerLink]="['/Home']" routerLinkActive="router-link-active">About</button>
+    <button [routerLink]="['/Experience']" routerLinkActive="router-link-active">Experience</button>
+    <button [routerLink]="['/Projects']" routerLinkActive="router-link-active">Projects</button>
+    <button [routerLink]="['/Extracurricular']" routerLinkActive="router-link-active">Achievements</button>
+    <button [routerLink]="['/Skills']" routerLinkActive="router-link-active">Skills</button>
+  </mat-drawer>
+
+  <div class="content">
+    <button type="button" mat-button (mouseenter)="drawer.toggle()">
+      Menu/Quick Links
+    </button>
+
+    <h2 class="text-3xl text-center font-bold mb-6">Experience</h2>
+    <div class="grid grid-cols-2 gap-6 p-6">
+      <div (click)="redirect_mmwave()"
+        class="bg-transparent border border-purple-300 p-5 rounded-xl hover:bg-purple-200 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out animate-scale">
+        <img src="rf_frontend_white2.png" alt="analog" class="image-style">
+        <h2 class="text-lg font-semibold text-purple-700">Analog</h2>
+        <p class="text-gray-700">
+          – Worked as a research intern at IIT Dharwad with Dr. Saroj Mondal, focusing on the IF load of the RF front-end. <br>
+          – Currently implementing the layout as a full-time researcher.</p>
+      </div>
+
+      <div (click)="redirect_france()"
+        class="bg-transparent border border-pink-300 p-5 rounded-xl hover:bg-pink-200 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out animate-scale">
+        <img src="digital_nn2.png" alt="digital" class="image-style">
+        <h2 class="text-lg font-semibold text-pink-700">Digital</h2>
+        <p class="text-gray-700">
+          – Contributed to an ongoing PhD thesis while working as a summer intern at ISEN in Lille, France with Dr. Antoine Frappe.<br> 
+          – Used SystemVerilog to digitally implement a feed-forward fully-connected network, intended for embedded and biomedical applications, implemented in a 28nm CMOS FDSOI process.</p>
+      </div>
+      
+    </div>
+  </div>
+</mat-drawer-container>

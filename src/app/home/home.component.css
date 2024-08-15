@@ -1,0 +1,149 @@
+/* The main container will stretch to full height and width */
+.full-page-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background: transparent; /* Ensures the background is transparent */
+}
+
+/* The navbar takes up a portion of the page and stretches full height */
+.navbar {
+  width: 250px;
+  /* background: linear-gradient(180deg, #3498db, #8e44ad); */
+  background: linear-gradient(300deg, #815cf0, #242486);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: white;
+}
+
+/* Navbar button styles */
+.navbar button {
+  margin-top: 10px;
+  color: white;
+  background: transparent;
+  border: none;
+  text-align: left;
+  width: 100%;
+  padding: 10px;
+}
+
+.navbar button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+/* Style for the experience dropdown menu */
+.experience-dropdown {
+  display: none; /* Hide dropdown by default */
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.navbar button:hover + .experience-dropdown {
+  display: flex; /* Show dropdown when hovering over Experience */
+}
+
+.experience-dropdown button {
+  background: transparent;
+  color: white;
+  border: none;
+  padding: 10px;
+  text-align: left;
+  width: 100%;
+}
+
+.experience-dropdown button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+/* The content area fills the remaining space */
+.content {
+  flex-direction: column;
+  padding: 20px;
+  overflow-y: auto;
+  position: relative; /* Allows absolute positioning of the button and image */
+  background: transparent; /* Makes the background of the content area transparent */
+}
+
+/* Move the "Menu/Quick Links" button to the top left corner */
+/* Style for the "Menu/Quick Links" button */
+.content button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10; /* Ensure it stays on top of other elements */
+  font-size: 1.2rem; /* Increase font size for prominence */
+  padding: 12px 20px; /* Adjust padding for better touch area */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-opaque background */
+  color: white;
+  border: none;
+  border-radius: 8px; /* Rounded corners for a modern look */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  
+}
+
+/* Hover effect for the "Menu/Quick Links" button */
+.content button:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow on hover */
+}
+
+/* Container for the text and image */
+.content-inner {
+  display: flex;
+  flex-direction: row; /* Arrange items in a row */
+  align-items: flex-start; /* Align items at the start of the container */
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 60px; /* Adjust to avoid overlap with the button */
+}
+
+/* Style for the text section */
+.text-section {
+  flex: 1;
+  margin: 0 20px 0 0.3cm; /* Space between text and image, and 0.5cm padding on the left */
+  text-align: left;
+  padding-left: 1.5rem;
+}
+.text-section h2 {
+  margin-top: 10px; /* Optional: Add some space below the heading */
+  font-size: 2.5rem; /* Adjust the size to your preference */
+  font-weight: bold; /* Optional: Make the text bold */
+  /* margin-bottom: 10px;  */
+}
+.text-section h3 {
+  margin-top: 10px;
+  font-size: 1.5rem; /* Adjust the size to your preference */
+}
+/* .text-section h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #7e22ce;
+} */
+
+/* Style for the image */
+.image-style {
+  max-width: 300px; 
+  height: auto;
+  border-radius: 8px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+/* Optional: If you want to add transparency to the cards */
+/* Light transparent background for cards */
+.grid div {
+  background: rgba(255, 255, 255, 0.8); 
+}
+
+.text-heading {
+  /* font-size: 1.875rem; 
+  font-weight: bold;
+  color: #7e22ce;
+  padding-left: 1.5rem; */
+  margin-top: 10px;
+  font-size: 1.5rem;
+  padding-left: 1.5rem;
+}

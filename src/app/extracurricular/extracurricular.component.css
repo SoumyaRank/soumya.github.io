@@ -1,0 +1,155 @@
+/* The main container will stretch to full height and width */
+.full-page-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background: transparent; /* Ensures the background is transparent */
+}
+
+/* The navbar takes up a portion of the page and stretches full height */
+.navbar {
+  width: 250px;
+  background: linear-gradient(300deg, #815cf0, #242486);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: white;
+}
+
+/* Navbar button styles */
+.navbar button {
+  margin-top: 10px;
+  color: white;
+  background: transparent;
+  border: none;
+  text-align: left;
+  width: 100%;
+  padding: 10px;
+}
+
+.navbar button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+/* The content area fills the remaining space */
+.content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  position: relative; /* Allows absolute positioning of the button */
+  background: transparent; /* Makes the background of the content area transparent */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content horizontally */
+  justify-content: center; /* Center the content vertically */
+}
+
+/* Style for the "Menu/Quick Links" button */
+.content button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10; /* Ensure it stays on top of other elements */
+  font-size: 1.2rem; /* Increase font size for prominence */
+  padding: 12px 20px; /* Adjust padding for better touch area */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-opaque background */
+  color: white;
+  border: none;
+  border-radius: 8px; /* Rounded corners for a modern look */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect for the "Menu/Quick Links" button */
+.content button:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow on hover */
+}
+
+/* Style for the date elements */
+.date {
+  display: inline-block; /* Makes each date occupy only the necessary width */
+  width: 100%; /* Ensures that each date takes up full width of its container */
+  text-align: left; /* Aligns the date text to the left */
+  margin-left: 0; /* Ensures there is no extra margin */
+  padding-left: 0; /* Removes padding to align it properly */
+  font-weight: bold; /* Optional: Make the dates bold for emphasis */
+}
+
+/* Style for the paragraph */
+.text-gray-700 {
+  margin-left: 0; /* Ensure there is no extra margin on the left */
+  padding-left: 0; /* Ensure there is no extra padding on the left */
+}
+
+
+/* Custom animations */
+@keyframes scaleIn {
+  from {
+      transform: scale(0.95);
+      opacity: 0.9;
+  }
+  to {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+/* Additional class for smaller text */
+/* Additional class for smaller text below the image */
+.text-sm {
+  font-size: 0.875rem; /* Adjust font size to make it smaller */
+}
+
+/* Ensure image styles remain as specified */
+.image-style {
+  margin-left: 20px;
+  max-width: 20%; /* Reduced size */
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Center align text below the image without affecting text above */
+.text-gray-700.text-sm {
+  text-align: center;
+  margin-top: 1rem; /* Ensure space between the image and text */
+}
+
+
+.animate-scale {
+  animation: scaleIn 0.3s ease-in-out;
+}
+
+/* Optional: If you want to add transparency to the cards */
+.grid {
+  display: flex;
+  flex-direction: column; /* Arrange items in a column */
+  gap: 30px; /* Adjust spacing between rows */
+  width: 100%; /* Ensure the grid takes up full width */
+  max-width: 100%; /* Prevent exceeding the full width of the parent */
+}
+
+.grid div {
+  background: rgba(255, 255, 255, 0.8); 
+  width: 100%; /* Ensure each item spans the full width of the grid */
+}
+
+.text_image {
+  display: flex; /* Align items in a row */
+  justify-content: space-between; /* Space out text and image */
+}
+
+.text_image .text-gray-700 {
+  flex: 1; /* Allow the text to take up remaining space */
+  margin-right: 10px; /* Space between text and image */
+}
+
+.text_image img.image-style {
+  max-width: 20%; /* Set the image size */
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
