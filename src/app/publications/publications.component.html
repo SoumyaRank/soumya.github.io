@@ -1,0 +1,68 @@
+<mat-drawer-container class="full-page-container">
+    <mat-drawer #drawer class="navbar" mode="side" (mouseleave)="drawer.toggle()" closed>
+        <!-- <p>Navigation Links</p> -->
+        <button [routerLink]="['/Home']" routerLinkActive="router-link-active">About</button>
+        <button [routerLink]="['/Experience']" routerLinkActive="router-link-active">Experience</button>
+        <button [routerLink]="['/Projects']" routerLinkActive="router-link-active">Projects</button>
+        <button [routerLink]="['/Extracurricular']" routerLinkActive="router-link-active">Achievements</button>
+        <button [routerLink]="['/Skills']" routerLinkActive="router-link-active">Skills</button>
+        <button [routerLink]="['/publications']" routerLinkActive="router-link-active">Publications</button>
+    </mat-drawer>
+
+    <div class="content">
+        <button type="button" mat-button (mouseenter)="drawer.toggle()">
+            Quick Links
+        </button>
+
+        <div class="flex flex-col items-center justify-center min-h-screen bg-transparent">
+            <h1 class="text-3xl font-bold mb-6">Publications</h1>
+            <div class="grid grid-cols-3 gap-6 p-6">
+                <div
+                    class="bg-transparent border border-purple-300 p-5 rounded-xl hover:bg-purple-200 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out animate-scale">
+                    <h2 class="text-lg font-semibold text-purple-700">Analog</h2>
+                    <div
+                        class="bg-transparent border border-pink-300 p-5 rounded-xl hover:bg-pink-200 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out animate-scale">
+                        <p class="text-gray-700">
+                            <span class="date">May 2025</span>  
+                            A 9.62mW LMV Cell for mm-Wave Applications <br>
+                            IEEE International Symposium on Circuits and Systems (IEEE ISCAS 2025) <br>
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-transparent border border-pink-300 p-5 rounded-xl hover:bg-pink-200 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out animate-scale">
+                    <h2 class="text-lg font-semibold text-pink-700">Digital</h2>
+
+                    <div
+                        class="text_image bg-transparent border border-pink-300 p-5 rounded-xl hover:bg-pink-200 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out animate-scale">
+                        <div>
+                            <p class="text-gray-700">
+                                <span class="date">April 2024</span>
+                                A 26.7 TOPS/W Multiplier-Less Digital In-Memory Computing Macro with Low-Cost Multi-Layer Inference in 28nm FDSOI for Edge AI <br>
+                                IEEE International Conference on Artificial Intelligence Circuits and Systems (IEEE AICAS 2025) <br>
+                            </p>
+                        </div>
+                        <!-- <img src="iisc_logo.png" alt="Description of image" class="image-style"> -->
+                    </div>
+
+
+                </div>
+
+                <!-- <div
+                    class="bg-transparent border border-purple-300 p-5 rounded-xl hover:bg-purple-200 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out animate-scale">
+                    <h2 class="text-lg font-semibold text-purple-700">Non Technical</h2>
+                    <div
+                        class="bg-transparent border border-pink-300 p-5 rounded-xl hover:bg-pink-200 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out animate-scale">
+                        <p class="text-gray-700">
+                            <span class="date">Aug 2023 – Present</span> Department Representative, Electrical
+                            Engineering Department,
+                            IIT Dharwad<br>
+                        </p>
+                    </div>
+
+                </div> -->
+            </div>
+        </div>
+    </div>
+</mat-drawer-container>

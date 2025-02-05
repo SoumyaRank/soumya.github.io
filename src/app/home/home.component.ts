@@ -39,7 +39,9 @@ export class HomeComponent {
   redirect_skills() {
     this.router.navigate(['/Skills']);
   }
-
+  redirect_publications() {
+    this.router.navigate(['/publications']);
+  }
   // showDropdown: boolean = false;
 
   // showExperienceDropdown() {
