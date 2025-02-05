@@ -32,7 +32,4 @@ export class ExperienceComponent {
   redirect_france() {
     this.router.navigate(['/france']);
   }
-  redirect_imn() {
-    this.router.navigate(['/imn']);
-  }
 }

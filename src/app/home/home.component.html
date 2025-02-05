@@ -7,12 +7,11 @@
     <button [routerLink]="['/Projects']" routerLinkActive="router-link-active">Projects</button>
     <button [routerLink]="['/Extracurricular']" routerLinkActive="router-link-active">Achievements</button>
     <button [routerLink]="['/Skills']" routerLinkActive="router-link-active">Skills</button>
-    <button [routerLink]="['/publications']" routerLinkActive="router-link-active">Publications</button>
   </mat-drawer>
 
   <div class="content">
     <button type="button" mat-button (mouseenter)="drawer.toggle()" (click)="drawer.toggle()">
-      Quick Links
+      Menu/Quick Links
     </button>
 
     <div class="content-inner">
@@ -25,12 +24,12 @@
           internship background in <b>RF front end design</b> and in
           digital design. I've worked abroad professionally as a recipient of the esteemed <b>Charpak Lab
             Scholarship</b>.
-          I am actively looking for a <b>PhD</b> program in analog domain that will begin in the fall of 2025.
+          I am actively looking for a <b>PhD program in analog domain</b> that will begin in the fall of 2025.
         </p>
         <!-- <br> -->
         <h3>Areas of Expertise</h3>
         <p>
-          My interests are <b>analog circuit design</b>, <b>RF-IC design</b>, and the application of EDA tools. I have
+          My interests are <b>analog circuit design</b>, <b>RF-IC design</b>, and the application of EDA tools.I have
           solid design
           experience with LNA, Op-Amp, LDO, and current mirrors. I am quite knowledgeable in impedance matching
           networks, mixers, and oscillators. Furthermore, I completed the IF load <b>layout</b> all by myself, including
@@ -75,12 +74,6 @@
         <h2 class="text-lg font-semibold text-purple-700">Skills</h2>
         <p class="text-gray-700">A versatile professional with exceptional technical expertise and strong interpersonal
           skills.</p>
-      </div>
-
-      <div (click)="redirect_publications()"
-        class="bg-transparent hover:underline border border-purple-300 p-5 rounded-xl hover:bg-purple-200 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out animate-scale">
-        <h2 class="text-lg font-semibold text-purple-700">Publications</h2>
-        <p class="text-gray-700">Publications here.</p>
       </div>
 
       <!-- <h2 class="text-lg font-semibold text-purple-700" style="font-size: 2rem;">Experience</h2> -->
