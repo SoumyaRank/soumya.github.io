@@ -17,14 +17,16 @@ body {
      /* background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  Chrome 10-25, Safari 5.1-6 */
      /* background: linear-gradient(300deg, #815cf0, #242486);  */
 
-     background: linear-gradient(300deg, #e6c889, #cb89e6); 
+     /* background: linear-gradient(300deg, #e6c889, #cb89e6);  */
 
-     /* background-color: #cb89e6; */
+     background-color: 	#FFDAB9;
      
     color: antiquewhite;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-family: 'Roboto', sans-serif;
+    font-family: sans-serif; 
+    src: url('/downloads/cmu.serif-roman.ttf') format('truetype');
+    /* 'Roboto',  */
     display: flex;
     
     /* justify-content: center; */
@@ -38,5 +40,9 @@ body {
 
 body {
     margin: 0;
-    font-family: 'Caladea', sans-serif;
+    font-family: 'CMU Serif', serif;
 }
+
+.content button {
+    font-family: 'CMU Serif', serif;
+  }

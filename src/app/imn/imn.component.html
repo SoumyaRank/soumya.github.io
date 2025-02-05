@@ -1,0 +1,31 @@
+<mat-drawer-container class="full-page-container">
+    <mat-drawer #drawer class="navbar" mode="side" (mouseleave)="drawer.toggle()" closed>
+        <!-- <p>Navigation Links</p> -->
+        <button [routerLink]="['/Home']" routerLinkActive="router-link-active">About</button>
+        <button [routerLink]="['/Experience']" routerLinkActive="router-link-active">Experience</button>
+        <button [routerLink]="['/Projects']" routerLinkActive="router-link-active">Projects</button>
+        <button [routerLink]="['/Extracurricular']" routerLinkActive="router-link-active">Achievements</button>
+        <button [routerLink]="['/Skills']" routerLinkActive="router-link-active">Skills</button>
+        <button [routerLink]="['/publications']" routerLinkActive="router-link-active">Publications</button>
+    </mat-drawer>
+
+    <div class="content">
+        <button type="button" mat-button (mouseenter)="drawer.toggle()">
+            Quick Links
+        </button>
+
+        <div class="content-inner">
+            <img src="imn2.png" alt="Description of image" class="image-style">
+            <div class="text-section">
+                <h1>Multiband Impedance Matching Networks for RF Energy Harvesting</h1>
+                <h2>Challenge</h2>
+                <p>To reduce the dependency on batteries for implants. Invisible waves from radios, TVs, cellular towers, and Wi-Fi constantly surround us. Is it possible to capture this energy and power miniature devices?</p>
+                <h2>Solution</h2>
+                <p>A matching network that can function on different power and frequency ranges to extract maximum power from an RF energy source. Various impedance-matching networks are available for specific power and frequency applications; however, the most exciting aspect is creating a matching network that can function on several frequencies and numerous power levels.</p>
+                <h2>My contribution</h2>
+                <p>I am currently working on implementing a multiband impedance matching network to achieve maximum power transfer under varying conditions. This technology will create a future with miniature battery-free electronics.</p>
+            </div>
+
+        </div>
+    </div>
+</mat-drawer-container>
